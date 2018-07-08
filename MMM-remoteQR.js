@@ -17,7 +17,7 @@ Module.register("MMM-remoteQR",{
 	},
 
 	getStyles: function () {
-		return ["MMM-RemoteQR.css"];
+		return ["MMM-remoteQR.css"];
 	},
 
 	getScripts: function() {
