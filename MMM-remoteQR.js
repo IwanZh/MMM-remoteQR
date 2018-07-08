@@ -11,7 +11,9 @@ Module.register("MMM-remoteQR",{
 		shortenMessage: false,
 		alert: true,
 		imageFile: "remoteQR.png",
-		logfile: "logs.json"
+		logfile: "logs.json",
+		height: 100,
+		width:100
 	},
 
 	getStyles: function () {
@@ -46,8 +48,8 @@ Module.register("MMM-remoteQR",{
 		var imageQR = document.createElement("img");
 		imageQR.className = "imagewrapper";
 		imageQR.src = this.file(this.config.imageFile);
-		imageQR.width = 100;
-		imageQR.height = 100;
+		imageQR.width = this.config.height;
+		imageQR.height = this.config.width;
 
 		wrapper.appendChild(imageQR);
 
